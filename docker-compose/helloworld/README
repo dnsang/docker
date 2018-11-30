@@ -1,0 +1,8 @@
+Dockerfile to build docker image. 
+docker-compose.yml define 2 images web & redis
+Command:
+To run 2 services:
+docker-compose up
+check: http://0.0.0.0:5000/
+list 2 running images with:
+`docker image ls`	
