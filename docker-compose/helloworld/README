@@ -5,4 +5,6 @@ To run 2 services:
 docker-compose up
 check: http://0.0.0.0:5000/
 list 2 running images with:
-`docker image ls`	
+`docker image ls`
+stop 2 services with: `docker-compose down`
+	
