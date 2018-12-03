@@ -31,4 +31,17 @@ docker tag 9c38defc10e3 <UserName>/<Repository Name>:simple_java_helloworld
 #Push image to the repository 
 docker push <UserName>/<Repository Name>:simple_java_helloworld
 
+#Pull the image
+docker pull <UserName>/<Repository Name>:simple_java_helloworld
+
+#Run the image again
+docker run -itd <IMAGE_ID>
+
+#Save & Share image to others people.
+
+docker save <UserName>/<RepositoryName>:simple_java_helloworld > simple_java_helloworld.dimg
+
+docker load --input simple_java_helloworld.dimg
+
+
 
