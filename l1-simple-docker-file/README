@@ -1,0 +1,34 @@
+# In this lesson, you will learn to create a basic docker file.
+# Push to History
+
+# Build our docker image
+docker image build .
+
+# List out our image
+docker image ls
+
+# Run our docker image base on image id
+docker run -itd <IMAGE-ID>
+
+# Get our container id
+docker ps
+
+# Get logs from container 
+docker logs <CONTAINER-ID>
+>> Hello World From Container
+
+#Login to dockerhub. (register via hub.docker.com)
+
+docker login 
+or
+docker login --username=<UserName> --email=<Email>
+
+#Login to hub.docker.com, create a repository for your image. 
+
+#Tag your image to the repository
+docker tag 9c38defc10e3 <UserName>/<Repository Name>:simple_java_helloworld
+
+#Push image to the repository 
+docker push <UserName>/<Repository Name>:simple_java_helloworld
+
+
